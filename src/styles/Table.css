@@ -35,9 +35,10 @@
   gap: 5px;
   padding: auto;
   margin-bottom: 5px;
-  
-  
-  
+ }
+
+ td {
+  font-weight:bolder;
  }
 
  .acciones {
