@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ShowCategories from "./pages/showCategories";
+import ShowProducts from "./pages/ShowProducts";
+import NewItem from "./pages/NewItem";
+import Home from "./pages/CRUD";
+import CategoriaID from "./pages/CategoriaID";
+import ProductoID from "./pages/ProductoID";
+import UpdateCategory from "./pages/UpdateCategory";
+import UpdateProduct from "./pages/UpdateProduct";
+import "./styles/Home.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/categorias" element={<ShowCategories />}></Route>
+        <Route path="/productos" element={<ShowProducts />}></Route>
+        <Route
+          path="/categorias/crear"
+          element={<NewItem type={"categorias"} />}
+        ></Route>
+        <Route
+          path="/productos/crear"
+          element={<NewItem type={"productos"} />}
+        ></Route>
+        <Route path="/categorias/:id" element={<CategoriaID />}></Route>
+        <Route path="/productos/:id" element={<ProductoID />}></Route>
+        <Route
+          path="/categorias/editar/:id"
+          element={<UpdateCategory />}
+        ></Route>
+        <Route path="/productos/editar/:id" element={<UpdateProduct />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

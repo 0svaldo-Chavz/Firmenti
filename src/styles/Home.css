@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url("./svg/Rect-Light.svg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  font-weight:500;
+}
