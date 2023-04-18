@@ -11,15 +11,15 @@ const Home = () => {
           <div className="col-md-8">
             <div className="card-body">
               <h5 className="card-title">CRUD con React</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item ">Create</li>
-                <li class="list-group-item">Read</li>
-                <li class="list-group-item">Update</li>
-                <li class="list-group-item">Delete</li>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item ">Create</li>
+                <li className="list-group-item">Read</li>
+                <li className="list-group-item">Update</li>
+                <li className="list-group-item">Delete</li>
               </ul>
-              <div class="d-grid gap-2 col-6 mx-auto">
-                <Link to='/categorias' class="btn btn-primary" >Categorias</Link>
-                <Link to='/productos' class="btn btn-primary" >Productos</Link>
+              <div className="d-grid gap-2 col-6 mx-auto">
+                <Link to='/categorias' className="btn btn-primary" >Categorias</Link>
+                <Link to='/productos' className="btn btn-primary" >Productos</Link>
               </div>
             </div>
           </div>
